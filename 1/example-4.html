@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+<script>
+    function showFirst() {
+        document.getElementById('slide-2').classList.add('hidden');
+        document.getElementById('slide-1').classList.remove('hidden');
+    }
+    function showSecond() {
+        document.getElementById('slide-1').classList.add('hidden');
+        document.getElementById('slide-2').classList.remove('hidden');
+    }
+</script>
+</head>
+<body>
+    <button onclick="showFirst();">1</button>
+    <button onclick="showSecond();">2</button>
+    <div id="slide-1">
+        Первый слайд
+    </div>
+    <div id="slide-2" class="hidden">
+        Второй слайд
+    </div>
+</body>
+</html>

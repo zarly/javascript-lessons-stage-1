@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    #menu { width: 120px; background: #eee; }
+    #menu .menuContent { display: none; }
+    #menu.expanded .menuContent { display: block; }
+</style>
+<script>
+    function expand() {
+        document.getElementById('menu').classList.add('expanded');
+    }
+    function collapse() {
+        document.getElementById('menu').classList.remove('expanded');
+    }
+</script>
+</head>
+<body>
+    <div id="menu" onmouseover="expand()" onmouseout="collapse()">
+        Корень меню
+        <div class="menuContent">
+            <div>Первый пункт</div>
+            <div>Второй пункт</div>
+            <div>Третий пункт</div>
+        </div>
+    </div>
+</body>
+</html>
